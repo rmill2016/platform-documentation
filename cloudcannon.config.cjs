@@ -96,7 +96,7 @@ module.exports = {
             instance_value: 'UUID',
         }
     },
-    commit_templates: {
-        template_string: '{message}'
-    }
+    commit_templates: [
+        {template_string: '{message}'}
+    ]
 }
