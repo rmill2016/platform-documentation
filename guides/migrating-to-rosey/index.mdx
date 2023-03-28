@@ -1,0 +1,83 @@
+---
+_schema: guide-item
+_uuid: "8efc9b38-4034-471c-8c13-f8cdb5eeb188"
+_created_at: "2023-03-22 16:25:30 +0000"
+title: "Migrate to Rosey"
+nav_title: "Migrate to Rosey"
+order: 3
+published: true
+image: "/documentation/static/CloudCannonDocumentationog.jpg"
+description: "Migrate your internationalized site to Rosey in a few easy steps."
+tags: []
+related_articles: null
+related_links: []
+---
+
+If you’re already using [i18n functionality on CloudCannon](/documentation/articles/adding-i18n-to-your-site-for-global-audiences/), you might want to consider moving to Rosey. 
+
+Rosey is an open-source tool developed by CloudCannon, which does the same job a bit better. In this guide, we’ll first discuss some of the advantages of using Rosey over CloudCannon’s built-in i18n functionality. Then, we’ll look at a step-by-step walkthough you can use to migrate your site.
+
+## Advantages of Rosey
+
+- Rosey is written in Rust, and runs blazingly fast.
+- Rosey is available as an NPM package, so you can develop and test your translated site locally, instead of pushing to CloudCannon to build the site every time you make a change.
+- Rosey has a wider set of features:
+    - With the `--wrap` flag, you can ensure that languages with no spaces are appropriately wordwrapped for better readability and accessibility.
+    - Quickly audit your site to find untranslated or outdated strings with `rosey check`.
+    - Rosey supports translation of images, JSON, and HTML attributes like img alt tags and meta descriptions.
+- Rosey is open-source, so if there’s something you don’t like, you can create an issue on [GitHub](https://github.com/CloudCannon/rosey) or even submit a pull request to have it changed. The code is completely public if you want to see what’s happening under the hood.
+
+## Caveats
+
+The main downside of using Rosey with CloudCannon is that it can cause problems with the Visual Editor. Rosey moves around your site files after the build is completed, which might prevent the Visual Editor from finding and displaying the built files.
+
+A good way to use Rosey on CloudCannon is to have a two sites connected to the same repository. 
+
+* One site is your staging environment, and doesn't use Rosey. You'll do all your editing on this site.
+* The other site is your production environment, uses Rosey, and is editing locked. You'll set this up to be your live site. Changes from your editable branch will be copied across either in virtue of being connected to the same Git branch, or when you publish changes between branches.
+
+You can set an environment variable in your site settings, and check it in your `postbuild` file to tell Rosey whether or not to run.
+
+<comp.CodeBlock language="sh" source=".cloudcannon/postbuild">
+if [[ $TRANSLATE_SITE == "true" ]];
+then
+    \# use Rosey here!
+fi
+</comp.CodeBlock>
+
+If you already have a good staging/production branching workflow on CloudCannon, Rosey is a good fit for you!
+
+## Migrating your site
+
+If your site is already set up for i18n on CloudCannon, migrating to Rosey is easy! If you’re starting from scratch, have a look at the [Rosey documentation](https://www.notion.so/Prevent-wordwrapping-of-inappropriate-elements-by-Rosey-9f3fcd09e02b43e4bca3d7d19cc96ca1).
+
+1. Initialize NPM on your site with `npm init` if you haven’t already
+2. Install Rosey with `npm install rosey`
+3. Rename your `_locales` directory to `rosey/locales` and convert each file to JSON.
+4. Add a `rosey.yml` file with some basic configuration:
+
+<comp.CodeBlock language="yaml" source="rosey.yml">
+```
+source: "path/to/your/built/site" # e.g. _site
+tag: "data-i18n" # the attribute you've tagged your translatable elements with
+```
+</comp.CodeBlock>
+    
+5. At this point, you can already start testing locally. Run `npx rosey build --serve` and see your translated site running on a local server.
+6. Finally, add a `.cloudcannon/postbuild` script to run Rosey after every build on CloudCannon
+    
+<comp.CodeBlock language="sh" source=".cloudcannon/postbuild">
+```
+echo "Installing Rosey"
+npm install
+
+echo "Translating site with Rosey"
+# This move ensures the translated site ends up where CloudCannon picks up your site
+mv ./_site ./_untranslated_site                  
+npx rosey build --source _untranslated_site --dest _site
+```
+</comp.CodeBlock>
+
+🎉 Your site should be now translated on CloudCannon! You can switch off i18n in your build settings.
+
+See the [Rosey documentation](https://rosey.app) for more details about configuring translations.

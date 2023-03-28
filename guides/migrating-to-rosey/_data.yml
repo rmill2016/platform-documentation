@@ -1,0 +1,5 @@
+_schema: guide
+guide_id: rosey-migration-guide
+guide_title: "Rosey Migration Guide"
+guide_image: /documentation/static/rosey.svg
+guide_priority: 3
