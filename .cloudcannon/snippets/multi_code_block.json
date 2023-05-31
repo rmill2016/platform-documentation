@@ -19,6 +19,46 @@
     "_inputs": {
       "content": {
         "type": "code"
+      },
+      "annotations": {
+        "type": "array",
+        "comment": "Optional annotations to show below the code block. Link them to a key containing ___1___ or ___2___ (which will be removed from the key before display)",
+        "options": {
+          "structures": {
+            "values": [
+              {
+                "_inputs": {
+                  "annotation_content": {
+                    "type": "markdown"
+                  },
+                  "number": {
+                    "comment": "Match to a key containing ___1___ or ___2___ in the code block",
+                    "type": "string"
+                  }
+                },
+                "preview": {
+                  "icon": "campaign",
+                  "text": [
+                    {
+                      "key": "number"
+                    },
+                    "Unconfigured"
+                  ],
+                  "subtext": [
+                    {
+                      "key": "annotation_content"
+                    },
+                    "Empty"
+                  ]
+                },
+                "value": {
+                  "number": 1,
+                  "annotation_content": ""
+                }
+              }
+            ]
+          }
+        }
       }
     },
     "params": {
