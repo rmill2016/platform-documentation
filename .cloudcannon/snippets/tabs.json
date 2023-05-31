@@ -1,6 +1,6 @@
 {
   "tabs": {
-    "snippet": "<comp.Tabs [[args]]>\n[[tabs]]</comp.Tabs>",
+    "snippet": "<comp.Tabs [[args]]>[[tabs]]</comp.Tabs>",
     "inline": false,
     "preview": {
       "text": "Tabs",
@@ -50,7 +50,13 @@
         "parser": "repeating",
         "options": {
           "editor_key": "tabs",
-          "snippet": "  <comp.Tab [[tab_args]]>\n[[content]]\n  </comp.Tab>\n"
+          "snippet": "<comp.Tab [[tab_args]]>[[content]]</comp.Tab>",
+          "style": {
+            "between": "\n",
+            "block": {
+              "indent": "  "
+            }
+          }
         }
       },
       "tab_args": {
@@ -70,9 +76,15 @@
       "content": {
         "parser": "content",
         "options": {
-          "indented_by": "    ",
           "editor_key": "inner_markdown",
-          "allow_nested": false
+          "style": {
+            "output": "block",
+            "block": {
+              "leading": "\n",
+              "trailing": "\n",
+              "indent": "  "
+            }
+          }
         }
       }
     }
