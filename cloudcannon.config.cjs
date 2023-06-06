@@ -5,6 +5,7 @@ const _snippets = {
     ...require(path.join(__dirname, ".cloudcannon/snippets/conditional.json")),
     ...require(path.join(__dirname, ".cloudcannon/snippets/data_reference.json")),
     ...require(path.join(__dirname, ".cloudcannon/snippets/docs_image.json")),
+    ...require(path.join(__dirname, ".cloudcannon/snippets/example.json")),
     ...require(path.join(__dirname, ".cloudcannon/snippets/multi_code_block.json")),
     ...require(path.join(__dirname, ".cloudcannon/snippets/notice.json")),
     ...require(path.join(__dirname, ".cloudcannon/snippets/tabs.json")),
@@ -43,16 +44,16 @@ module.exports = {
             url: '/changelog/[slug]/',
             parser: 'front-matter',
             sort: {
-              key: 'path',
-              order: 'desc'
+                key: 'path',
+                order: 'desc'
             },
             create: {
-              path: '{date|year}-{date|month}-{date|day}_{title|slugify}.[ext]',
-              _inputs: {
-                date: {
-                  instance_value: 'NOW'
+                path: '{date|year}-{date|month}-{date|day}_{title|slugify}.[ext]',
+                _inputs: {
+                    date: {
+                        instance_value: 'NOW'
+                    }
                 }
-              }
             },
             schemas: {
                 default: {
@@ -113,7 +114,7 @@ module.exports = {
         }
     },
     commit_templates: [
-        {template_string: '{message}'}
+        { template_string: '{message}' }
     ],
     timezone: 'Pacific/Auckland',
     base_url: 'documentation'
