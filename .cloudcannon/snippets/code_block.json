@@ -93,6 +93,7 @@
         "options": {
           "editor_key": "content",
           "allow_nested": false,
+          "raw": true,
           "forbidden_tokens": [
             "```"
           ]
@@ -138,6 +139,7 @@
         "options": {
           "editor_key": "annotation_content",
           "allow_nested": false,
+          "raw": true,
           "style": {
             "output": "block",
             "block": {
