@@ -1,6 +1,6 @@
 {
   "multi_code_block": {
-    "snippet": "<comp.MultiCodeBlock [[args]]>\n```\n[[inner]]\n```\n[[annotations]]</comp.MultiCodeBlock>",
+    "snippet": "<comp.MultiCodeBlock [[args]]>\n```[[inner]]```\n[[annotations]]</comp.MultiCodeBlock>",
     "inline": false,
     "preview": {
       "text": [
@@ -95,7 +95,15 @@
           "raw": true,
           "forbidden_tokens": [
             "```"
-          ]
+          ],
+          "style": {
+            "output": "block",
+            "block": {
+              "leading": "\n",
+              "trailing": "\n",
+              "indent": ""
+            }
+          }
         }
       },
       "annotations": {
