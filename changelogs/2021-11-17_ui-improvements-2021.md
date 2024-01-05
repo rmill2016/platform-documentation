@@ -2,7 +2,7 @@
 title: UI Improvements 2021
 type: major
 ---
-We’re really excited to release the updates to our app UI outlined in our blog post: [Sparking joy: CloudCannon UI improvements](https://cloudcannon.com/blog/ui-improvements-2021/). Along with the usual fixes we’ve also overhauled the settings area for Custom domains.
+We’re really excited to release the updates to our app UI outlined in our blog post: [Sparking joy: CloudCannon UI improvements](/blog/ui-improvements-2021/). Along with the usual fixes we’ve also overhauled the settings area for Custom domains.
 
 **Features:**
 

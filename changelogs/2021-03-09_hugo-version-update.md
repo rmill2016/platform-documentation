@@ -2,7 +2,7 @@
 title: Hugo version update
 type: minor
 ---
-This release updates Hugo within CloudCannon to the latest version. This release also begins the process of deprecating Dropbox - [read this blog post](https://cloudcannon.com/blog/dropping-support-for-dropbox/) for more information.
+This release updates Hugo within CloudCannon to the latest version. This release also begins the process of deprecating Dropbox - [read this blog post](/blog/dropping-support-for-dropbox/) for more information.
 
 **Features:**
 

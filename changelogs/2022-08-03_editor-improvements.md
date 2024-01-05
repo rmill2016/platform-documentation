@@ -2,7 +2,7 @@
 title: Editor Improvements
 type: major
 ---
-This release brings our series of [editor improvements and features](https://cloudcannon.com/blog/saving-time-our-new-editor-improvements/) to everyone in CloudCannon. After weeks of Beta testing and ironing out a few bugs, we are excited to bring this new functionality to users. Our release from Beta also includes several new features and bug fixes:
+This release brings our series of [editor improvements and features](/blog/saving-time-our-new-editor-improvements/) to everyone in CloudCannon. After weeks of Beta testing and ironing out a few bugs, we are excited to bring this new functionality to users. Our release from Beta also includes several new features and bug fixes:
 
 **Features:**
 
