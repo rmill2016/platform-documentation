@@ -166,17 +166,17 @@ Rich Text inputs have the following options available:
     Defines the initial height of this input in pixels (`px`). Defaults to `320`. Supports values between `135` and `1200`.
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="paths" type_markdown="Object">
-    Paths to common folders. Each path is relative to [global](/documentation/articles/setting-global-configuration/) site `source`. If unset, the paths default to those configured in the [global configuration](/documentation/articles/setting-global-configuration/).
+    Paths to common folders. Each path is relative to [global](/documentation/articles/setting-global-configuration) site `source`. If unset, the paths default to those configured in the [global configuration](/documentation/articles/setting-global-configuration).
 
     The available keys are:
 
     * `uploads` for the default location of newly uploaded site files.
-    * `dam_uploads` for the default location of newly uploaded [DAM](/documentation/articles/introduction-to-assets-and-dams/) files.
-    * `dam_static` for the location of statically copied assets for [DAM](/documentation/articles/introduction-to-assets-and-dams/) files.
+    * `dam_uploads` for the default location of newly uploaded [DAM](/documentation/articles/introduction-to-assets-and-dams) files.
+    * `dam_static` for the location of statically copied assets for [DAM](/documentation/articles/introduction-to-assets-and-dams) files.
 
     These paths control where new asset files are uploaded to. They also set the default path when choosing existing images, and linking to existing files.
 
-    `uploads` and `dam_uploads` have a [number of dynamic placeholders available](/documentation/articles/adjusting-the-uploads-path/).
+    `uploads` and `dam_uploads` have a [number of dynamic placeholders available](/documentation/articles/adjusting-the-uploads-path).
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="empty_type" type_markdown="string">
     Set how an ‘empty’ value will be saved. Does not apply to existing empty values. Can be one of the following:
@@ -262,8 +262,8 @@ Options for adding media and full-width content elements.
   <comp.DataReferenceRow label="snippet" type_markdown="boolean">
     Enables a control to insert snippets, if any are available.
 
-    * [Eleventy shortcodes](/articles/editing-with-eleventy-shortcodes/)
-    * [Hugo shortcodes](/articles/editing-with-hugo-shortcodes/)
+    * [Eleventy shortcodes](/articles/editing-with-eleventy-shortcodes)
+    * [Hugo shortcodes](/articles/editing-with-hugo-shortcodes)
  </comp.DataReferenceRow>
 </comp.DataReference>
 
@@ -273,7 +273,7 @@ Options for images when enabled.
 
 <comp.DataReference>
  <comp.DataReferenceRow label="image_size_attributes" type_markdown="Boolean">
-    Instructs the editor to save `width` and `height` on the image elements added to this input. This can [prevent pop-in](/documentation/articles/why-cloudcannon-injects-width-and-height-onto-images/) as a page loads. Defaults to `false`.
+    Instructs the editor to save `width` and `height` on the image elements added to this input. This can [prevent pop-in](/documentation/articles/why-cloudcannon-injects-width-and-height-onto-images) as a page loads. Defaults to `false`.
     
     <comp.Notice info_type="important">
       This defaults to `true` for sites created before June 23 2023, in order to keep those sites working. Use the [Image Size Attributes Default](/documentation/articles/activating-flags/#image-size-attributes-default-behaviour) flag to update this for your site, if needed.

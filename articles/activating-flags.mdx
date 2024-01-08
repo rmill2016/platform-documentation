@@ -19,9 +19,9 @@ This article will explain the context behind each flag, and describe what it wou
 
 ## Image size attributes default behaviour
 
-`image_size_attributes` is a configuration option that can be set for the [Content Editor](/documentation/edit/interfaces/content-editor) and [Editable Regions](/documentation/edit/editing/html#editable-regions), using the [configuration cascade](/documentation/articles/using-the-configuration-cascade/). When `image_size_attributes` is `true`, CloudCannon will inject `width` and `height` attributes onto images that are added to rich text through the editor.
+`image_size_attributes` is a configuration option that can be set for the [Content Editor](/documentation/edit/interfaces/content-editor) and [Editable Regions](/documentation/edit/editing/html#editable-regions), using the [configuration cascade](/documentation/articles/using-the-configuration-cascade). When `image_size_attributes` is `true`, CloudCannon will inject `width` and `height` attributes onto images that are added to rich text through the editor.
 
-[See this article](/documentation/articles/why-cloudcannon-injects-width-and-height-onto-images/) for more information about why you might want CloudCannon to add these attributes to your images. One noteable disadvantage of this behaviour is that, depending on the Markdown engine used by your site, Markdown-formatted images may need to be converted to HTML.
+[See this article](/documentation/articles/why-cloudcannon-injects-width-and-height-onto-images) for more information about why you might want CloudCannon to add these attributes to your images. One noteable disadvantage of this behaviour is that, depending on the Markdown engine used by your site, Markdown-formatted images may need to be converted to HTML.
 
 This flag sets the default behaviour, when `image_size_attributes` is not explicitly configured. If this flag is turned on, any image input that does not explicitly have `image_size_attributes` configured will inject the attributes. In most cases, this flag will be turned off, meaning that the attributes will not be injected for any editing interface that does not have `image_size_attributes: true`.
 

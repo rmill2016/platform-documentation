@@ -7,4 +7,4 @@ This release corrects the redirects that are defined in .cloudcannon/routing.jso
 **Fixes:**
 
 * .cloudcannon/routing.json take priority over file based routes
-* [Officially deprecated 301.txt](/documentation/articles/deprecated-301-redirects/)
+* [Officially deprecated 301.txt](/documentation/articles/deprecated-301-redirects)

@@ -7,12 +7,12 @@ This release builds on our array structures, provides a feature to commit files 
 **Features:**
 
 * Better previews in the data editor for array structure items
-* Array structures now support [configuration definitions](/documentation/edit/editing/configuration/)
+* Array structures now support [configuration definitions](/documentation/edit/editing/configuration)
 * Social icons in data editor inputs updated
 * Increased [form submission rate limit](/documentation/host/forms/#rate-limiting)
 * Fork template flow removed in favor of select template flow only
 * Removed Google Analytics
-* [Commit file updates](/documentation/sync/source-syncing/committing-file-updates/) from a build back to your syncing provider
+* [Commit file updates](/documentation/sync/source-syncing/committing-file-updates) from a build back to your syncing provider
 
 **Fixes:**
 

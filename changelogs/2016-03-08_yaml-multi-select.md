@@ -8,7 +8,7 @@ This release adds a multiselect/tagger to the range of interfaces for Jekyll fro
 
 **Features:**
 
-* Multiselect/tagger added to [front matter interfaces](/documentation/edit/interfaces/front-matter-editor/).
+* Multiselect/tagger added to [front matter interfaces](/documentation/edit/interfaces/front-matter-editor).
 * New look and feel to [docs.cloudcannon.com](http://docs.cloudcannon.com/).
 
 

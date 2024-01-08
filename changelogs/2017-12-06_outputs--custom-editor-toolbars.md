@@ -4,14 +4,14 @@ type: major
 ---
 
 
-This release adds two major features, the option to output a generated site and editor toolbar customisation. See [our feature post in our blog](/features/2017/12/07/build-outputs-and-toolbar-options/).
+This release adds two major features, the option to output a generated site and editor toolbar customisation. See [our feature post in our blog](/features/2017/12/07/build-outputs-and-toolbar-options).
 
 **Features:**
 
 * Rework of *Site Settings* / *Storage Providers* to *Site Settings* / *File Syncing*
-* Added *Site Settings* / *Storage Providers* / *[Output](/documentation/sync/output-syncing/)*
-* [Customise editor toolbars](/documentation/edit/editing/configuration/)
-* [New controls options](/documentation/edit/editing/configuration/) (e.g. table, subscript, superscript)
+* Added *Site Settings* / *Storage Providers* / *[Output](/documentation/sync/output-syncing)*
+* [Customise editor toolbars](/documentation/edit/editing/configuration)
+* [New controls options](/documentation/edit/editing/configuration) (e.g. table, subscript, superscript)
 
 **Fixes:**
 

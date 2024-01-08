@@ -4,7 +4,7 @@ type: major
 ---
 
 
-This release changes the layout of our app pages and adds org branding features. [Read release post at cloudcannon.com](/features/2017/11/22/app-redesign/).
+This release changes the layout of our app pages and adds org branding features. [Read release post at cloudcannon.com](/features/2017/11/22/app-redesign).
 
 **Before:**
 

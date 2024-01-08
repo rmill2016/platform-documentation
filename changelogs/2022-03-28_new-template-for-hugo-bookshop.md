@@ -2,7 +2,7 @@
 title: New template for Hugo Bookshop
 type: minor
 ---
-This release adds a new Hugo template using Bookshop components  - [Megakit](/community/themes/megakit/).  We’ve also extended the email validation token expiry on [Inbox targets](/documentation/articles/integrating-your-forms-with-email/) and fixed a variety of issues.
+This release adds a new Hugo template using Bookshop components  - [Megakit](/community/themes/megakit).  We’ve also extended the email validation token expiry on [Inbox targets](/documentation/articles/integrating-your-forms-with-email) and fixed a variety of issues.
 
 **Features:**
 

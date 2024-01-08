@@ -8,7 +8,7 @@ This release allows users to select the version of Jekyll used to build each sit
 **Features:**
 
 * Jekyll **3.0.3** and **2.5.3** support.
-* [Jekyll versions](/documentation/build/setup/configuration/) configurable per site.
+* [Jekyll versions](/documentation/build/setup/configuration) configurable per site.
 * CNAME and A record support in *Site Settings* / *DNS*.
 * URLs in the `srcset` attribute support CloudCannon optimisations.
 * Jekyll build error output accessible from sidebar.

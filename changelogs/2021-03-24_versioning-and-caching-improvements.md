@@ -6,10 +6,10 @@ This release adds features to improve caching between builds, as well as general
 
 **Features:**
 
-* Added a new build config for preserved paths, allowing for caching of custom directories such as node\_modules. See our new [documentation on caching](/documentation/build/setup/caching/)
+* Added a new build config for preserved paths, allowing for caching of custom directories such as node\_modules. See our new [documentation on caching](/documentation/build/setup/caching)
 * Added [Ruby 3.0 support](/documentation/build/setup/ruby-versions/#ruby-versions)
 * Upgraded the default Node.js version to the current LTS. Tailwind builds will now work.
-* Added [NVM support](/documentation/build/setup/node-versions/) to define a custom node version
+* Added [NVM support](/documentation/build/setup/node-versions) to define a custom node version
 
 **Fixes:**
 

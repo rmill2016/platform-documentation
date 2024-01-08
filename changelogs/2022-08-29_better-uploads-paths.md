@@ -2,7 +2,7 @@
 title: Better uploads paths
 type: minor
 ---
-This release improves on our existing custom uploads paths feature. You can now choose where to upload files within a DAM. Setting the uploads path is now more flexible with a new, [backward-compatible placeholder pattern](/documentation/articles/adjusting-the-uploads-path/) that can use more of your data within the paths.
+This release improves on our existing custom uploads paths feature. You can now choose where to upload files within a DAM. Setting the uploads path is now more flexible with a new, [backward-compatible placeholder pattern](/documentation/articles/adjusting-the-uploads-path) that can use more of your data within the paths.
 
 **Features:**
 

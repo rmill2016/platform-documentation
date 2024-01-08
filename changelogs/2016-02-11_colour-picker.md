@@ -10,7 +10,7 @@ This release adds a colour picker to the range of interfaces for Jekyll front ma
 **Features:**
 
 * Check for changes call on Status page for Dropbox connected sites.
-* Colour picker added to [front matter interfaces](/documentation/edit/interfaces/front-matter-editor/).
+* Colour picker added to [front matter interfaces](/documentation/edit/interfaces/front-matter-editor).
 * Improved performance when syncing from storage provider webhooks.
 * Switch to Bitbucket webhooks from Bitbucket services (deprecated).
 * Branch connected shown on storager provider settings for GitHub and Bitbucket sites.

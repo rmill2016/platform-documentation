@@ -19,7 +19,7 @@ We've added Git Large File Storage (LFS) support and included fixes for several 
 **Features:**
 
 * New pricing plans: Personal, Standard, and Team
-* Support for Git LFS, available on the [Team, Business, and Agency plan](/pricing/)
+* Support for Git LFS, available on the [Team, Business, and Agency plan](/pricing)
 
 **Fixes:**
 

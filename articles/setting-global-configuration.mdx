@@ -60,7 +60,7 @@ CLOUDCANNON_CONFIG_PATH=src/cloudcannon.config.yaml
 
 ### Creating a configuration file
 
-The [global configuration](/documentation/articles/setting-global-configuration/) file is the heart of your integration with CloudCannon. You can create your configuration file locally or using the CloudCannon configuration GUI.
+The [global configuration](/documentation/articles/setting-global-configuration) file is the heart of your integration with CloudCannon. You can create your configuration file locally or using the CloudCannon configuration GUI.
 
 Once you have created your site, CloudCannon will automatically detect if you do not have a configuration file. In your sidebar, you will see the “Get started” button, which will prompt you to “Generate your global configuration file”.
 
@@ -291,7 +291,7 @@ Here's an example file:
   <comp.Tabs label="Configuration">
    <comp.Tab name="Automatic install">
 
-      Automatically installed is the recommended default with **Manage eleventy-plugin-cloudcannon manually** disabled in your [build configuration](/documentation/articles/configuring-your-build/).
+      Automatically installed is the recommended default with **Manage eleventy-plugin-cloudcannon manually** disabled in your [build configuration](/documentation/articles/configuring-your-build).
 
         <comp.CodeBlock language="javascript" source=".eleventy.js">
       ```
@@ -311,7 +311,7 @@ Here's an example file:
    </comp.Tab>
     <comp.Tab name="Manual install">
 
-      Applicable if you have **Manage eleventy-plugin-cloudcannon manually** enabled in your [build configuration](/documentation/articles/configuring-your-build/).
+      Applicable if you have **Manage eleventy-plugin-cloudcannon manually** enabled in your [build configuration](/documentation/articles/configuring-your-build).
 
       <comp.CodeBlock language="javascript" source=".eleventy.js">
       ```
@@ -444,7 +444,7 @@ Global configuration files have the following options available:
     The subpath your output files are mounted at.
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="collections_config" type_markdown="Object">
-    Contains definitions for your collections, the related sets of content files for your site grouped by folder. Entries are keyed by your collection key, and contain configuration specific to that collection. Read more about [defining your collections](/documentation/articles/defining-your-collections/) and the available configuration.
+    Contains definitions for your collections, the related sets of content files for your site grouped by folder. Entries are keyed by your collection key, and contain configuration specific to that collection. Read more about [defining your collections](/documentation/articles/defining-your-collections) and the available configuration.
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="collections_config_override" type_markdown="Boolean">
     Prevents CloudCannon from automatically discovering collections for supported SSGs if `true`. Defaults to `false`.
@@ -453,7 +453,7 @@ Global configuration files have the following options available:
     Controls which collections are displayed in the site navigation and how those collections are grouped. Defaults to splitting all available collections between *Pages*, *Blogging* and *Data* groups. Read more about [configuring your navigation section](/documentation/articles/introducing-your-site-navigation/#configurable-navigation-section).
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="data_config" type_markdown="Object or boolean">
-    Controls what data sets are available to populate [select and multiselect inputs](/documentation/articles/using-select-inputs-to-edit-your-data/).
+    Controls what data sets are available to populate [select and multiselect inputs](/documentation/articles/using-select-inputs-to-edit-your-data).
 
     If set as a boolean and `true`, all auto-discoverable data sets are added. This is only applicable to Jekyll and Hugo sites.
 
@@ -466,24 +466,24 @@ Global configuration files have the following options available:
     Global paths to common folders. These are often automatically populated from your SSG, and not all paths are relevant to all SSGs. Each path is relative to `source`. The available keys are:
 
     * `uploads` for the default location of newly uploaded site files.
-    * `dam_uploads` for the default location of newly uploaded [DAM](/documentation/articles/introduction-to-assets-and-dams/) files.
+    * `dam_uploads` for the default location of newly uploaded [DAM](/documentation/articles/introduction-to-assets-and-dams) files.
     * `static` for the location of statically copied assets.
-    * `dam_static` for the location of statically copied assets for [DAM](/documentation/articles/introduction-to-assets-and-dams/) files.
+    * `dam_static` for the location of statically copied assets for [DAM](/documentation/articles/introduction-to-assets-and-dams) files.
     * `collections` for the parent folder of all collections.
     * `data` for the location of site data files.
     * `layouts` for the top-most folder of site layout files.
     * `includes` for the top-most folder of includes/partials/shortcode files.
 
-    `uploads` and `dam_uploads` have a [number of dynamic placeholders available](/documentation/articles/adjusting-the-uploads-path/).
+    `uploads` and `dam_uploads` have a [number of dynamic placeholders available](/documentation/articles/adjusting-the-uploads-path).
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="source" type_markdown="String">
     Base path to your site source files, relative to the root folder of your site.
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="source_editor" type_markdown="Object">
-    Contains settings for the behavior and appearance of the [Source Editor](/documentation/articles/configuring-code-editors/).
+    Contains settings for the behavior and appearance of the [Source Editor](/documentation/articles/configuring-code-editors).
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="timezone" type_markdown="String">
-    Timezone of your site in IANA format. Used by [date and datetime inputs](/documentation/articles/using-date-and-time-inputs-to-edit-your-data/). Defaults to `Etc/UTC`.
+    Timezone of your site in IANA format. Used by [date and datetime inputs](/documentation/articles/using-date-and-time-inputs-to-edit-your-data). Defaults to `Etc/UTC`.
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="output" type_markdown="String">
     Generates the integration file in another folder. Not available for Jekyll, Hugo and Eleventy. Defaults to the root folder of your site.
@@ -492,4 +492,4 @@ Global configuration files have the following options available:
 
 ### Configuration cascade options
 
-Global configuration files are the base level for defining options in the [configuration cascade](/documentation/articles/using-the-configuration-cascade/), allowing you to define these options here at a global scope.
+Global configuration files are the base level for defining options in the [configuration cascade](/documentation/articles/using-the-configuration-cascade), allowing you to define these options here at a global scope.

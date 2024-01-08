@@ -2,7 +2,7 @@
 title: SvelteKit Live Editing
 type: minor
 ---
-This release adds live editing to our two SvelteKit templates, [Justice](/community/themes/justice/) and [Urban](/community/themes/urban/). Learn how to [add live editing to your SvelteKit site](/documentation/articles/live-editing-with-svelte/). Also included is a fix for collection detection for Jekyll and Hugo sites.
+This release adds live editing to our two SvelteKit templates, [Justice](/community/themes/justice) and [Urban](/community/themes/urban). Learn how to [add live editing to your SvelteKit site](/documentation/articles/live-editing-with-svelte). Also included is a fix for collection detection for Jekyll and Hugo sites.
 
 **Features:**
 

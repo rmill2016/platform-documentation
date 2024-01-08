@@ -4,11 +4,11 @@ type: minor
 ---
 This release adds support for nested objects within your collections schemas. We've also added support for Pipenv on the build server, and released a variety of bug fixes.
 
-Earlier we released a set of major improvements to the CloudCannon Editors on open beta. You can read all about the changes in our [Editor improvements blog post](/blog/saving-time-our-new-editor-improvements/).
+Earlier we released a set of major improvements to the CloudCannon Editors on open beta. You can read all about the changes in our [Editor improvements blog post](/blog/saving-time-our-new-editor-improvements).
 
 **Features:**
 
-* [Collection schemas](/documentation/articles/creating-collection-schemas/) now support nested objects
+* [Collection schemas](/documentation/articles/creating-collection-schemas) now support nested objects
 * Installed [Pipenv](https://pipenv.pypa.io/en/latest/) on the build server
 
 **Fixes:**

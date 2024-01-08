@@ -8,9 +8,9 @@ This release focuses on the front matter editing experience and general fixes.
 
 **Features:**
 
-* [Code front matter interface](/documentation/edit/interfaces/front-matter-editor/)
-* [URL front matter interface](/documentation/edit/interfaces/front-matter-editor/)
-* [Long text field front matter interface](/documentation/edit/interfaces/front-matter-editor/)
+* [Code front matter interface](/documentation/edit/interfaces/front-matter-editor)
+* [URL front matter interface](/documentation/edit/interfaces/front-matter-editor)
+* [Long text field front matter interface](/documentation/edit/interfaces/front-matter-editor)
 * data-src is rewritten when optimised
 * Git repositories are split by the owner when adding a provider
 

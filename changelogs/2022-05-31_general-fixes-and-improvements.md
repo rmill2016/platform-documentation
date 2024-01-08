@@ -6,7 +6,7 @@ This release includes a number of general fixes and improvements.
 
 **Features:**
 
-* New [Dante template](/community/themes/dante/)
+* New [Dante template](/community/themes/dante)
 * Support for internationalized domain names
 * Versions for various command line tools output in build log
 * Password strength indicator for signup page

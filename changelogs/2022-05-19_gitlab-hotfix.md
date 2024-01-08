@@ -10,7 +10,7 @@ A few hours before this release, we released a fix for a syncing issue. We have 
 
 **Features:**
 
-* A new Hugo template\! [Check out Fiction today](/community/themes/fiction/).
+* A new Hugo template\! [Check out Fiction today](/community/themes/fiction).
 * Streamlined the Project creation process
 * Added support for a large number of new material icons
 * Headers can now be added to self-hosted GitLab

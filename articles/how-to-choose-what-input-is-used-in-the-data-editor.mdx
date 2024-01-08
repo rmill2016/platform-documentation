@@ -14,10 +14,10 @@ related_links: null
 <comp.Youtube id="L5nUbtAsIpM" />
 
 <comp.Notice info_type="info">
-  We've recently changed the way you configure inputs. [Check out our migration guide here](/documentation/articles/migrating-to-input-configuration/).
+  We've recently changed the way you configure inputs. [Check out our migration guide here](/documentation/articles/migrating-to-input-configuration).
 </comp.Notice>
 
-The [Data Editor](/documentation/edit/interfaces/data-editor/) uses a wide range of different inputs. Each input corresponds to a field in your front matter or data file, providing an editing interface for those values. Inputs have a type, label and a comment.
+The [Data Editor](/documentation/edit/interfaces/data-editor) uses a wide range of different inputs. Each input corresponds to a field in your front matter or data file, providing an editing interface for those values. Inputs have a type, label and a comment.
 
 <comp.DocsImage path="ye_olde_images/input-diagram.svg" alt="Diagram showcasing parts of a text input" type="screenshot-snippet" />
 
@@ -39,10 +39,10 @@ _inputs:
 </comp.MultiCodeBlock>
 
 <comp.Notice info_type="info">
-  The above code shows the `_inputs` configuration set in the same file, but you can choose where to set this for inputs across your site in the [configuration cascade](/documentation/articles/using-the-configuration-cascade/).
+  The above code shows the `_inputs` configuration set in the same file, but you can choose where to set this for inputs across your site in the [configuration cascade](/documentation/articles/using-the-configuration-cascade).
 </comp.Notice>
 
-Each key inside `_inputs` targets one or more inputs in the [Data Editor](/documentation/articles/introducing-the-data-editor/). These keys can target inputs directly by key name, or the nested path to the input.
+Each key inside `_inputs` targets one or more inputs in the [Data Editor](/documentation/articles/introducing-the-data-editor). These keys can target inputs directly by key name, or the nested path to the input.
 
 This configuration applies to `title` inputs:
 
@@ -166,7 +166,7 @@ Each entry in `_inputs` has the following options available:
   <comp.DataReferenceRow label="cascade" type_markdown="Boolean">
     Specifies whether or not this input configuration should be merged with any matching, less specific configuration. Defaults to `true`.
 
-    The [configuration cascade](/documentation/articles/using-the-configuration-cascade/) works by finding the most specific `_inputs` entry. Usually, once an option is found in the cascade, there's no reason to keep looking.
+    The [configuration cascade](/documentation/articles/using-the-configuration-cascade) works by finding the most specific `_inputs` entry. Usually, once an option is found in the cascade, there's no reason to keep looking.
 
     When this is `true`, the cascade continues looking and each entry found is merged. This allows you to define a `comment` globally, then a different `label` for inputs in a collection without redefining the `comment`. You can stop the cascade at any given point by setting `cascade` to `false`.
   </comp.DataReferenceRow>
@@ -202,16 +202,16 @@ some_text: Hello
 
 Here are all the available input types, each with their own available options:
 
-* [Plain text](/documentation/articles/using-text-inputs-to-edit-your-data/) `text` `textarea` `email` `disabled`
-* [Social](/documentation/articles/using-social-inputs-to-edit-your-data/) `pinterest` `facebook` `twitter` `github` `instagram`
-* [Code](/documentation/articles/using-code-inputs-to-edit-your-data/) `code`
-* [Boolean](/documentation/articles/using-checkbox-inputs-to-edit-your-data/) `checkbox` `switch`
-* [Color](/documentation/articles/using-color-inputs-to-edit-your-data/) `color`
-* [Number](/documentation/articles/using-number-inputs-to-edit-your-data/) `number` `range`
-* [URL](/documentation/articles/using-url-inputs-to-edit-your-data/) `url`
-* [Rich text](/documentation/articles/using-rich-text-inputs-to-edit-your-data/) `html` `markdown`
-* [Date](/documentation/articles/using-date-and-time-inputs-to-edit-your-data/) `date` `datetime` `time`
-* [File](/documentation/articles/using-upload-inputs-to-edit-your-data/) `file` `image` `document`
-* [Select](/documentation/articles/using-select-inputs-to-edit-your-data/) `select` `multiselect` `choice` `multichoice`
-* [Objects](/documentation/articles/editing-objects-in-your-data/) `object`
-* [Arrays](/documentation/articles/using-arrays-to-edit-your-data/) `array`
+* [Plain text](/documentation/articles/using-text-inputs-to-edit-your-data) `text` `textarea` `email` `disabled`
+* [Social](/documentation/articles/using-social-inputs-to-edit-your-data) `pinterest` `facebook` `twitter` `github` `instagram`
+* [Code](/documentation/articles/using-code-inputs-to-edit-your-data) `code`
+* [Boolean](/documentation/articles/using-checkbox-inputs-to-edit-your-data) `checkbox` `switch`
+* [Color](/documentation/articles/using-color-inputs-to-edit-your-data) `color`
+* [Number](/documentation/articles/using-number-inputs-to-edit-your-data) `number` `range`
+* [URL](/documentation/articles/using-url-inputs-to-edit-your-data) `url`
+* [Rich text](/documentation/articles/using-rich-text-inputs-to-edit-your-data) `html` `markdown`
+* [Date](/documentation/articles/using-date-and-time-inputs-to-edit-your-data) `date` `datetime` `time`
+* [File](/documentation/articles/using-upload-inputs-to-edit-your-data) `file` `image` `document`
+* [Select](/documentation/articles/using-select-inputs-to-edit-your-data) `select` `multiselect` `choice` `multichoice`
+* [Objects](/documentation/articles/editing-objects-in-your-data) `object`
+* [Arrays](/documentation/articles/using-arrays-to-edit-your-data) `array`

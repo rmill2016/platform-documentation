@@ -13,13 +13,13 @@ related_articles:
   - introducing-the-visual-editor
 related_links: []
 ---
-Editable Regions are configured with the `_editables` option within the [configuration cascade](/documentation/articles/using-the-configuration-cascade/). The following keys are available within `_editables`\:
+Editable Regions are configured with the `_editables` option within the [configuration cascade](/documentation/articles/using-the-configuration-cascade). The following keys are available within `_editables`\:
 
 * `text` for simple block editable regions like (e.g. `<p>`)
 * `block` for block editable regions (e.g. `<div>` or `<section>`)
 * `link` for inline editable regions on `<a>` tags
 * `image` for image editable regions (i.e. `<img>`)
-* `content` for the main content section of the [Content Editor](/documentation/articles/introducing-the-content-editor/).
+* `content` for the main content section of the [Content Editor](/documentation/articles/introducing-the-content-editor).
 
 Alternatively, you can configure options directly on the element with a JSON value in the `data-cms-options` attribute.
 
@@ -70,7 +70,7 @@ _editables:
 ```
 </comp.MultiCodeBlock>
 <comp.Notice info_type="info">
-  Although this is example sets the options globally, you can set this on different scopes in the [configuration cascade](/documentation/articles/using-the-configuration-cascade/).
+  Although this is example sets the options globally, you can set this on different scopes in the [configuration cascade](/documentation/articles/using-the-configuration-cascade).
 </comp.Notice>
 <comp.CodeBlock language="html" source="page.html">
 ```
@@ -190,7 +190,7 @@ Options for adding media and full-width content elements.
     Available for `_editables.block` and `_editables.content`.
  </comp.DataReferenceRow>
   <comp.DataReferenceRow label="snippet" type_markdown="Boolean">
-    Enables a control to insert snippets, if any are available.  See [Editing with Hugo Shortcodes](/documentation/articles/editing-with-hugo-shortcodes/)/
+    Enables a control to insert snippets, if any are available.  See [Editing with Hugo Shortcodes](/documentation/articles/editing-with-hugo-shortcodes)/
 
     Available for `_editables.block` and `_editables.content`.
  </comp.DataReferenceRow>
@@ -202,7 +202,7 @@ Options for images when enabled.
 
 <comp.DataReference>
  <comp.DataReferenceRow label="image_size_attributes" type_markdown="Boolean">
-    Instructs the editor to save `width` and `height` on the image elements added to this editable. This can [prevent pop-in](/documentation/articles/why-cloudcannon-injects-width-and-height-onto-images/) as a page loads. Defaults to `true`.
+    Instructs the editor to save `width` and `height` on the image elements added to this editable. This can [prevent pop-in](/documentation/articles/why-cloudcannon-injects-width-and-height-onto-images) as a page loads. Defaults to `true`.
 
     Available for `_editables.image`, `_editables.block` and `_editables.content`.
  </comp.DataReferenceRow>
@@ -277,13 +277,13 @@ These paths control where new asset files are uploaded to. They also set the def
 
 <comp.DataReference>
  <comp.DataReferenceRow label="paths" type_markdown="Object">
-    Paths to common folders. Each path is relative to [global](/documentation/articles/setting-global-configuration/) site `source`. If unset, the paths default to those configured in the [global configuration](/documentation/articles/setting-global-configuration/). The available keys are:
+    Paths to common folders. Each path is relative to [global](/documentation/articles/setting-global-configuration) site `source`. If unset, the paths default to those configured in the [global configuration](/documentation/articles/setting-global-configuration). The available keys are:
 
     * `uploads` for the default location of newly uploaded site files.
-    * `dam_uploads` for the default location of newly uploaded [DAM](/documentation/articles/introduction-to-assets-and-dams/) files.
-    * `dam_static` for the location of statically copied assets for [DAM](/documentation/articles/introduction-to-assets-and-dams/) files.
+    * `dam_uploads` for the default location of newly uploaded [DAM](/documentation/articles/introduction-to-assets-and-dams) files.
+    * `dam_static` for the location of statically copied assets for [DAM](/documentation/articles/introduction-to-assets-and-dams) files.
 
-    `uploads` and `dam_uploads` have a [number of dynamic placeholders available](/documentation/articles/adjusting-the-uploads-path/).
+    `uploads` and `dam_uploads` have a [number of dynamic placeholders available](/documentation/articles/adjusting-the-uploads-path).
 
     Available for `_editables.link`, `_editables.text`, `_editables.image`,`_editables.block` and `_editables.content`.
  </comp.DataReferenceRow>

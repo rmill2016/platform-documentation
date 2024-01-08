@@ -355,13 +355,13 @@ Object inputs have the following options available within `options` inside an `_
     Has no effect if `subtype` anything but `mutable`. *Only applies to mutable objects*.
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="entries.structures" type_markdown="string or object">
-    Provides data formats when adding entries to the data within this object input. When adding an entry, team members are prompted to choose from [a number of values you have defined](/documentation/articles/defining-what-adds-to-an-array-with-array-structures/). Has no default.
+    Provides data formats when adding entries to the data within this object input. When adding an entry, team members are prompted to choose from [a number of values you have defined](/documentation/articles/defining-what-adds-to-an-array-with-array-structures). Has no default.
 
     Has no effect if `subtype` anything but `mutable`. *Only applies to mutable objects*.
 
     If set as an object, the structures value is used directly.
 
-    If set as a string, the structures value is fetched from the [configuration cascade](/documentation/articles/using-the-configuration-cascade/). This allows you to define `_structures` elsewhere and reference it from here.
+    If set as a string, the structures value is fetched from the [configuration cascade](/documentation/articles/using-the-configuration-cascade). This allows you to define `_structures` elsewhere and reference it from here.
 
     <comp.Notice info_type="info">
       This looks similar to, and shares same format as `structures`. However, `entries.structures` applies to the entries within the object, and `structures` applies to the object itself.
@@ -448,12 +448,12 @@ Object inputs have the following options available within `options` inside an `_
     * `icon`
     * `image`
 
-    See the [preview options documentation](/documentation/articles/changing-how-cards-preview-your-data/) for detailed information on setting this option.
+    See the [preview options documentation](/documentation/articles/changing-how-cards-preview-your-data) for detailed information on setting this option.
 
     If the input has `structures`, the `preview` from the structure definition is used instead.
 
     <comp.Notice info_type="info">
-      Object inputs now support the new `preview` option. [Read our migration guide](/documentation/articles/migrating-to-preview-options/) if you are still using the old options: `text_key`, `subtext_key`, `image_key` and `icon`.
+      Object inputs now support the new `preview` option. [Read our migration guide](/documentation/articles/migrating-to-preview-options) if you are still using the old options: `text_key`, `subtext_key`, `image_key` and `icon`.
     </comp.Notice>
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="preview.icon" type_markdown="array, string or boolean">
@@ -483,11 +483,11 @@ Object inputs have the following options available within `options` inside an `_
     Subtext is hidden if text and subtext is the same. If there's no text, subtext is used instead.
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="structures" type_markdown="string or object">
-    Provides data formats for value of this object. When choosing an item, team members are prompted to choose from [a number of values you have defined](/documentation/articles/defining-what-adds-to-an-array-with-array-structures/). Has no default.
+    Provides data formats for value of this object. When choosing an item, team members are prompted to choose from [a number of values you have defined](/documentation/articles/defining-what-adds-to-an-array-with-array-structures). Has no default.
 
     If set as an object, the structures value is used directly.
 
-    If set as a string, the structures value is fetched from the [configuration cascade](/documentation/articles/using-the-configuration-cascade/). This allows you to define `_structures` elsewhere and reference it from here.
+    If set as a string, the structures value is fetched from the [configuration cascade](/documentation/articles/using-the-configuration-cascade). This allows you to define `_structures` elsewhere and reference it from here.
 
     <comp.Notice info_type="info">
       This looks similar to, and shares same format as `entries.structures`. However, `structures` applies to the object itself, and `entries.structures` applies to the entries within the object.

@@ -23,7 +23,7 @@ You can define the collections themselves, change how you add new files, and cha
 <comp.Conditional ssgs={["Jekyll"]}>
   CloudCannon reads the pages, collections and data from your Jekyll site and automatically defines collections by default. The automatically defined collections match your Jekyll collections defined in `_config.yml`.
 
-  The automatic configuration is a good start, but we recommend adding collections and/or extending configuration for automatically discovered collections in your [global configuration](/documentation/articles/setting-global-configuration/) under `collections_config`.
+  The automatic configuration is a good start, but we recommend adding collections and/or extending configuration for automatically discovered collections in your [global configuration](/documentation/articles/setting-global-configuration) under `collections_config`.
 
   Here's a minimal configuration for two collections, with path and URL details automatically configured based on your Jekyll settings:
 
@@ -38,7 +38,7 @@ You can define the collections themselves, change how you add new files, and cha
   </comp.MultiCodeBlock>
 
   <comp.Notice info_type="info">
-    If required, you can prevent CloudCannon from automatically discovering collections by enabling the `collections_config_override` settings in your [global configuration](/documentation/articles/setting-global-configuration/).
+    If required, you can prevent CloudCannon from automatically discovering collections by enabling the `collections_config_override` settings in your [global configuration](/documentation/articles/setting-global-configuration).
   </comp.Notice>
 </comp.Conditional>
 
@@ -47,7 +47,7 @@ You can define the collections themselves, change how you add new files, and cha
 <comp.Conditional ssgs={["Hugo"]}>
   CloudCannon reads the files in the content and data folders from your Hugo site and automatically defines collections by default. The automatically defined collections are your top-level content sections keyed by folder name.
 
-  The automatic configuration is a good start, but we recommend adding collections and/or extending configuration for automatically discovered collections in your [global configuration](/documentation/articles/setting-global-configuration/) under `collections_config`.
+  The automatic configuration is a good start, but we recommend adding collections and/or extending configuration for automatically discovered collections in your [global configuration](/documentation/articles/setting-global-configuration) under `collections_config`.
 
   Here's a minimal configuration for two collections, with path and URL details automatically configured based on your Hugo settings:
 
@@ -62,7 +62,7 @@ You can define the collections themselves, change how you add new files, and cha
   </comp.MultiCodeBlock>
 
   <comp.Notice info_type="info">
-    If required, you can prevent CloudCannon from automatically discovering collections by enabling the `collections_config_override` settings in your [global configuration](/documentation/articles/setting-global-configuration/).
+    If required, you can prevent CloudCannon from automatically discovering collections by enabling the `collections_config_override` settings in your [global configuration](/documentation/articles/setting-global-configuration).
   </comp.Notice>
 </comp.Conditional>
 
@@ -71,7 +71,7 @@ You can define the collections themselves, change how you add new files, and cha
 <comp.Conditional ssgs={["Eleventy"]}>
   CloudCannon reads the pages, collections and data from your Eleventy site and automatically defines collections by default. The automatically defined collections match your Eleventy collections with files, keyed by name.
 
-  The automatic configuration is a good start, but we recommend adding collections and/or extending configuration for automatically discovered collections in your [global configuration](/documentation/articles/setting-global-configuration/) under `collections_config`.
+  The automatic configuration is a good start, but we recommend adding collections and/or extending configuration for automatically discovered collections in your [global configuration](/documentation/articles/setting-global-configuration) under `collections_config`.
 
   Here's a minimal configuration for two collections, with path and URL details automatically configured based on your Eleventy settings:
 
@@ -86,14 +86,14 @@ You can define the collections themselves, change how you add new files, and cha
   </comp.MultiCodeBlock>
 
   <comp.Notice info_type="info">
-    If required, you can prevent CloudCannon from automatically discovering collections by enabling the `collections_config_override` settings in your [global configuration](/documentation/articles/setting-global-configuration/).
+    If required, you can prevent CloudCannon from automatically discovering collections by enabling the `collections_config_override` settings in your [global configuration](/documentation/articles/setting-global-configuration).
   </comp.Notice>
 </comp.Conditional>
 
 
 
 <comp.Conditional not_ssgs={["Jekyll", "Eleventy", "Hugo"]}>
-  Define collections and configuration in your [global configuration](/documentation/articles/setting-global-configuration/) under `collections_config`.
+  Define collections and configuration in your [global configuration](/documentation/articles/setting-global-configuration) under `collections_config`.
 
   Here's a minimal configuration for two collections:
 
@@ -153,7 +153,7 @@ collections_config:
 </comp.MultiCodeBlock>
 
 <comp.Notice info_type="info">
-  Collection configuration now supports the new `preview` option. [Read our migration guide](/documentation/articles/migrating-to-preview-options/) if you are still using the old options: `text_key`, `subtext_key` and `image_size`.
+  Collection configuration now supports the new `preview` option. [Read our migration guide](/documentation/articles/migrating-to-preview-options) if you are still using the old options: `text_key`, `subtext_key` and `image_size`.
 </comp.Notice>
 
 Adding descriptive text and an external link to documentation above the collection file list:
@@ -275,12 +275,12 @@ Collection configuration entries have the following options available:
   <comp.DataReferenceRow label="add_options" type_markdown="Array of objects">
     Changes the options presented in the *\+Add menu* in the collection file list. Defaults to an automatically generated list from `schemas`, or first file in that collection if no schemas are configured.
 
-    [Read more about changing the default set of add options here](/documentation/articles/defining-more-ways-to-add-new-files/).
+    [Read more about changing the default set of add options here](/documentation/articles/defining-more-ways-to-add-new-files).
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="create" type_markdown="Object or string">
     The create path definition to control where new files are saved to inside this collection. Defaults to `[relative_base_path]/{title|slugify}.md`.
 
-    Read more details for `create` when [choosing where to create new files](/documentation/articles/choosing-where-to-create-new-files/).
+    Read more details for `create` when [choosing where to create new files](/documentation/articles/choosing-where-to-create-new-files).
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="disable_add" type_markdown="Boolean">
     Prevents users from adding new files in the collection file list if `true`.
@@ -357,7 +357,7 @@ Collection configuration entries have the following options available:
     For example `new_preview_url: /about/` will load the `/about/` URL on new or unbuilt pages in the Visual Editor.
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="output" type_markdown="Boolean">
-    Whether or not files in this collection produce files in the build output. Changes the default grouping for this collection in the navigation, and is used in consideration for the default `_enabled_editors` from the [configuration cascade](/documentation/articles/using-the-configuration-cascade/).
+    Whether or not files in this collection produce files in the build output. Changes the default grouping for this collection in the navigation, and is used in consideration for the default `_enabled_editors` from the [configuration cascade](/documentation/articles/using-the-configuration-cascade).
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="path" type_markdown="String">
     The top-most folder where the files in this collection are stored. It is relative to `source`. **Each collection must have a unique path**.
@@ -369,7 +369,7 @@ Collection configuration entries have the following options available:
   <comp.DataReferenceRow label="preview" type_markdown="Object">
     The preview definition for changing the way collection items are previewed across the editor.
 
-    See the [preview options documentation](/documentation/articles/changing-how-cards-preview-your-data/) for detailed information on setting this option.
+    See the [preview options documentation](/documentation/articles/changing-how-cards-preview-your-data) for detailed information on setting this option.
 
     You can also set `preview` for each [schema](/documentation/articles/creating-collection-schemas/#options) in your collection.
   </comp.DataReferenceRow>
@@ -413,13 +413,13 @@ Collection configuration entries have the following options available:
 
     The keys in this object should match the values used for `schema_key` inside each of this collection's files. `default` is a special entry and is used when a file has no schema.
 
-    [Read more about schemas and the available options](/documentation/articles/creating-collection-schemas/).
+    [Read more about schemas and the available options](/documentation/articles/creating-collection-schemas).
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="schema_key" type_markdown="String">
     The key used in each file to identify the schema that file uses. The value this key represents in each of this collection's files should match the keys in `schemas`. Defaults to `_schema`.
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="singular_key" type_markdown="String">
-    Overrides the default singular input key of the collection. This is used for naming conventions for [select and multiselect inputs](/documentation/articles/using-select-inputs-to-edit-your-data/).
+    Overrides the default singular input key of the collection. This is used for naming conventions for [select and multiselect inputs](/documentation/articles/using-select-inputs-to-edit-your-data).
   </comp.DataReferenceRow>
   <comp.DataReferenceRow label="singular_name" type_markdown="String">
     Overrides the default singular display name of the collection. This is displayed in the collection add menu and file context menu.

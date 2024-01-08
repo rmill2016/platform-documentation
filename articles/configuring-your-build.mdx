@@ -21,7 +21,7 @@ related_links: []
 ---
 Sites can be configured to build using Jekyll, Hugo, Eleventy, Next.js, Nuxt, Gatsby, SvelteKit, Astro, MkDocs, Static, or Custom.
 
-When [connecting your site](/documentation/articles/connecting-your-first-site/), you will be asked to select your SSG to build with. You can change this at any time by:
+When [connecting your site](/documentation/articles/connecting-your-first-site), you will be asked to select your SSG to build with. You can change this at any time by:
 
 1. Navigating to your site's settings
 2. Navigating to *Builds* / *Build*
@@ -29,7 +29,7 @@ When [connecting your site](/documentation/articles/connecting-your-first-site/)
 
 ## Build Step
 
-Here you can find what commands CloudCannon uses to build your sites. Learn more about [extending your build process with hooks](/documentation/articles/extending-your-build-process-with-hooks/).
+Here you can find what commands CloudCannon uses to build your sites. Learn more about [extending your build process with hooks](/documentation/articles/extending-your-build-process-with-hooks).
 
 <comp.Conditional ssgs={["Jekyll"]}>
   Jekyll is one of the first popular SSGs. Learn how you can customize Jekyll and the build environment to your needs.
@@ -54,7 +54,7 @@ Here you can find what commands CloudCannon uses to build your sites. Learn more
   These commands are run in the root folder of your site.
 
   <comp.Notice info_type="info">
-    If your `Gemfile` isn’t in the root folder, set the `BUNDLE_GEMFILE` [environment variable](/documentation/build/setup/environments/) to tell the Bundler where to find it. Setting this requires that your gems are specified in the `_config.yml` file.
+    If your `Gemfile` isn’t in the root folder, set the `BUNDLE_GEMFILE` [environment variable](/documentation/build/setup/environments) to tell the Bundler where to find it. Setting this requires that your gems are specified in the `_config.yml` file.
   </comp.Notice>
 </comp.Conditional>
 <comp.Conditional ssgs={["Hugo"]}>
@@ -119,7 +119,7 @@ It's good practice to specify which version of your static site generator you us
   </comp.Notice>
 </comp.Conditional>
 <comp.Conditional ssgs={["Hugo"]}>
-  By default CloudCannon builds using Hugo version <comp.SystemVersionDefault language="go" item="hugo" />. You can change which version of Hugo your build uses by running the `install-hugo` command in a [preinstall hook](/documentation/articles/extending-your-build-process-with-hooks/).
+  By default CloudCannon builds using Hugo version <comp.SystemVersionDefault language="go" item="hugo" />. You can change which version of Hugo your build uses by running the `install-hugo` command in a [preinstall hook](/documentation/articles/extending-your-build-process-with-hooks).
 
   For example, to build your site using an older version of Hugo:
   <comp.CodeBlock language="shell" source=".cloudcannon/preinstall">
@@ -149,7 +149,7 @@ To change a command line build option:
 2. Change details for one or more options
 3. Click **Update Configuration**
 <comp.Notice info_type="info">
-  See in-depth details for configuring [Environments](/documentation/articles/managing-your-node-version-with-nvm/) and [Optimizations](/documentation/articles/optimizing-your-build-by-minifying-css-and-javascript/)
+  See in-depth details for configuring [Environments](/documentation/articles/managing-your-node-version-with-nvm) and [Optimizations](/documentation/articles/optimizing-your-build-by-minifying-css-and-javascript)
 </comp.Notice>
 <comp.DocsImage path="ye_olde_images/builds-configuration.png" alt="Build Configuration interface" type="screenshot"/>
 
@@ -219,7 +219,7 @@ To change the environment variables for your site:
   ```
   </comp.CodeBlock>
 
-  You can set the Hugo environment using the `—-environment` flag in the command line. Learn more about [build configuration](/documentation/build/setup/configuration/).
+  You can set the Hugo environment using the `—-environment` flag in the command line. Learn more about [build configuration](/documentation/build/setup/configuration).
 
   Hugo exposes the environment with `hugo.Environment`.
 

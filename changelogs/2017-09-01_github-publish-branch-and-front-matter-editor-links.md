@@ -7,5 +7,5 @@ This release adds two features for customising the editing experience for your t
 
 **Features:**
 
-* [Front matter editor links](/documentation/edit/editing/configuration/)
-* [GitHub publish interface](/documentation/sync/publishing/)
+* [Front matter editor links](/documentation/edit/editing/configuration)
+* [GitHub publish interface](/documentation/sync/publishing)

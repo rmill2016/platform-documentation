@@ -18,7 +18,7 @@ The next aspect to tackle is how to add and remove components to a page, which i
 
 ## What are Structures?
 
-Structures are CloudCannon's answer to structured data on static sites. You can read more about structures in [Defining what adds to an array](/documentation/articles/defining-what-adds-to-an-array-with-array-structures/#structures) and the [Structures reference](/documentation/articles/array-structures-reference/), but the main thing to know is that for Bookshop, Structures define the set of components that can be added to a specific key in CloudCannon.
+Structures are CloudCannon's answer to structured data on static sites. You can read more about structures in [Defining what adds to an array](/documentation/articles/defining-what-adds-to-an-array-with-array-structures/#structures) and the [Structures reference](/documentation/articles/array-structures-reference), but the main thing to know is that for Bookshop, Structures define the set of components that can be added to a specific key in CloudCannon.
 
 ## The Bookshop component file
 
@@ -59,7 +59,7 @@ _inputs: #4
 </comp.Annotation> <comp.Annotation number="3">
   The `preview` section is used in the Bookshop component browser, and doesn't affect visual editing. We can ignore this key for now.
 </comp.Annotation> <comp.Annotation number="4">
-  The `_inputs` section is passed through as [CloudCannon's input configuration](/documentation/articles/how-to-choose-what-input-is-used-in-the-data-editor/),
+  The `_inputs` section is passed through as [CloudCannon's input configuration](/documentation/articles/how-to-choose-what-input-is-used-in-the-data-editor),
   allowing you to customize the fields specified in the `blueprint`.
 </comp.Annotation></comp.CodeBlock>
 
@@ -115,11 +115,11 @@ Then creating a new `sample` component in CloudCannon would present us with the 
 
 <comp.DocsImage path="/documentation/static/bookshop-11ty/new-sample-component.png" alt="A data editor panel open in CloudCannon showing the initialized state of a new Sample component when added to the page" type="ui-snippet"/>
 
-Component blueprints contain some other powerful features for helping create your Structures. We'll see those soon in the [Nesting components](/documentation/guides/bookshop-eleventy-guide/nesting-components/) page of this guide.
+Component blueprints contain some other powerful features for helping create your Structures. We'll see those soon in the [Nesting components](/documentation/guides/bookshop-eleventy-guide/nesting-components) page of this guide.
 
 ## Generating and using Structures
 
-The `npx @bookshop/generate` command that we set up when [configuring live editing](/documentation/guides/bookshop-eleventy-guide/configuring-live-editing/) will automatically create Structures from your Bookshop components and make them available to CloudCannon. This process happens as part of your site build step on CloudCannon.
+The `npx @bookshop/generate` command that we set up when [configuring live editing](/documentation/guides/bookshop-eleventy-guide/configuring-live-editing) will automatically create Structures from your Bookshop components and make them available to CloudCannon. This process happens as part of your site build step on CloudCannon.
 
 The Structures that your component is assigned to determines where it can be added in CloudCannon. For a `sample` component tagged as:
 

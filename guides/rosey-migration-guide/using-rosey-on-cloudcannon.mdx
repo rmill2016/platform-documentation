@@ -13,7 +13,7 @@ related_articles:
 related_links:
 ---
 
-Now that you can build your translated site with Rosey locally, we want to get the same build process working on CloudCannon. We'll add a postbuild step using [build hooks](/documentation/articles/extending-your-build-process-with-hooks/).
+Now that you can build your translated site with Rosey locally, we want to get the same build process working on CloudCannon. We'll add a postbuild step using [build hooks](/documentation/articles/extending-your-build-process-with-hooks).
 
 Recall that using Rosey in our postbuild can cause issues for the Visual Editor. To get around this, we'll only run Rosey on our production site. This works because we don't want to directly edit the production site anyway, and we may not need to see all the translated content on the staging site where we're editing. If you do need to preview translations on your site before they go live, you can create another site connected to the `staging` branch which also runs the postbuild!
 
