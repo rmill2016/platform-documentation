@@ -76,15 +76,8 @@ module.exports = {
     docs_ssgs: ssg_data.ssgs,
     docs_guide_series: guide_series_data.series,
   },
-  paths: {
-    dam_uploads: "images/[collection|slugify]/{date|year}/{date|month}",
-  },
   collections_config: {
     common_content: {
-      paths: {
-        dam_uploads:
-          "[collection|slugify]/{date|year}/{date|month}/[asset-filename]",
-      },
       path: "_common_content",
       output: false,
       icon: "copy_all",
